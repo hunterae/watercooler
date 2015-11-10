@@ -20,12 +20,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # authentication
 gem 'devise'
 # Less for Twitter bootstrap
-gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem 'less-rails' #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 # Twitter bootstrap for easy bootstrap of UI
-gem "twitter-bootstrap-rails"
+gem 'twitter-bootstrap-rails'
 # Omniauth gems
 gem 'omniauth-facebook'
 gem 'omniauth-twitter'
+# secure file to add app secret configurations
+gem 'figaro'
 
 group :development, :test do
   # Mysql for dev and test, postgres for production. Version specified due to this issue: http://stackoverflow.com/questions/32457657/rails-4-gemloaderror-specified-mysql2-for-database-adapter-but-the-gem-i
